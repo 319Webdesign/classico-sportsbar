@@ -146,7 +146,7 @@ export default function LiveSportSection() {
             </motion.div>
 
             {/* Headline */}
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-center lg:text-left">
               Dein Platz in der{' '}
               <span className="text-classico-gold">ersten Reihe.</span>
             </h2>
