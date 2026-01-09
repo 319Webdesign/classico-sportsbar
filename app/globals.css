@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  body {
+    @apply bg-[#050505] text-white antialiased;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
+  }
+  
+  /* Font Loading Optimization - Prevent FOIT */
+  @font-face {
+    font-family: system-ui;
+    font-display: swap;
+  }
+}
+
+/* Accessibility: Focus Styles für Keyboard Navigation */
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-classico-gold focus:ring-offset-2 focus:ring-offset-black;
+  }
+  
+  .focus-ring-inset {
+    @apply focus:outline-none focus:ring-2 focus:ring-classico-gold focus:ring-inset;
+  }
+  
+  /* Kontrastverbesserung: Gold-Text für bessere Lesbarkeit */
+  .text-classico-gold {
+    color: #D4AF37;
+    /* Erhöhter Kontrast durch leichten Schatten für kleine Texte */
+  }
+  
+  /* Für kleine Texte: Hellere Gold-Variante verwenden */
+  .text-classico-gold-small {
+    color: #E6C547;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-zinc-900/80 backdrop-blur-md;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shine-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s;
+  }
+  
+  .shine-effect:hover::before {
+    left: 100%;
+  }
+}
