@@ -22,7 +22,7 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-center lg:justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link
             href="/"
@@ -48,12 +48,12 @@ export default function Navigation() {
             </div>
           </Link>
 
-          {/* Reservieren Button */}
+          {/* Reservieren Button - nur auf Desktop sichtbar */}
           <a
             href="https://wa.me/4961579898000?text=Hallo%20Classico-Team%2C%20ich%20w%C3%BCrde%20gerne%20einen%20Tisch%20f%C3%BCr%20das%20n%C3%A4chste%20Spiel%20reservieren%21"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 lg:px-10 lg:py-4 min-h-[44px] min-w-[44px] bg-classico-gold text-[#050505] font-semibold text-base lg:text-lg rounded-md hover:bg-[#E6C547] transition-colors duration-200 focus-ring inline-flex items-center justify-center"
+            className="hidden lg:inline-flex px-8 py-3 lg:px-10 lg:py-4 min-h-[44px] min-w-[44px] bg-classico-gold text-[#050505] font-semibold text-base lg:text-lg rounded-md hover:bg-[#E6C547] transition-colors duration-200 focus-ring items-center justify-center"
             aria-label="Tisch via WhatsApp reservieren"
           >
             Tisch reservieren

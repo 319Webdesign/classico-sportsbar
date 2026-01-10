@@ -158,7 +158,7 @@ export default function LiveSportSection() {
                 von Sky und DAZN haben wir Zugriff auf alle Live-Events. Egal ob Bundesliga,
                 Champions League oder internationale Top-Ligen – bei uns verpasst du keine Sekunde.
               </p>
-              <p className="text-gray-400">
+              <p className="text-white lg:text-gray-400">
                 Dank mehrerer großer Screens im Innenbereich können wir bei Bedarf verschiedene
                 Sportevents gleichzeitig übertragen. Sprich unser Team einfach auf dein Wunschspiel
                 an!
