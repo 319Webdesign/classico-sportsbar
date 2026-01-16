@@ -1,38 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { MessageCircle, Play } from 'lucide-react'
-import { useState, useRef, useEffect } from 'react'
+import { MessageCircle } from 'lucide-react'
 
 export default function Hero() {
-  const [videoError, setVideoError] = useState(false)
-  const [videoLoaded, setVideoLoaded] = useState(false)
-  const desktopVideoRef = useRef<HTMLVideoElement>(null)
-  const mobileVideoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    // Versuche das Video programmatisch abzuspielen
-    const playVideo = async () => {
-      if (desktopVideoRef.current) {
-        try {
-          await desktopVideoRef.current.play()
-        } catch (error) {
-          console.log('Desktop video play error:', error)
-        }
-      }
-      if (mobileVideoRef.current) {
-        try {
-          await mobileVideoRef.current.play()
-        } catch (error) {
-          console.log('Mobile video play error:', error)
-        }
-      }
-    }
-
-    // Warte kurz, dann versuche abzuspielen
-    const timer = setTimeout(playVideo, 100)
-    return () => clearTimeout(timer)
-  }, [])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -196,38 +167,14 @@ export default function Hero() {
 
                 {/* Screen Area */}
                 <div className="aspect-[9/19] rounded-[2.5rem] overflow-hidden bg-black relative">
-                  {/* Video */}
-                  <video
-                    ref={desktopVideoRef}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
-                    className="w-full h-full object-cover relative z-0"
-                    onLoadedData={() => {
-                      setVideoLoaded(true)
-                      desktopVideoRef.current?.play().catch(console.error)
+                  {/* Platzhalter-Bild */}
+                  <div
+                    className="w-full h-full bg-cover bg-center"
+                    style={{
+                      backgroundImage:
+                        'url(https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?q=80&w=1920&auto=format&fit=crop)',
                     }}
-                    onCanPlay={() => {
-                      setVideoLoaded(true)
-                      desktopVideoRef.current?.play().catch(console.error)
-                    }}
-                    onError={(e) => {
-                      console.error('Video error:', e)
-                      setVideoError(true)
-                    }}
-                    onPlay={() => setVideoLoaded(true)}
-                  >
-                    <source src="/header_video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  {/* Fallback if video doesn't load - nur wenn wirklich Fehler */}
-                  {videoError && (
-                    <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center z-20 pointer-events-none">
-                      <Play size={64} className="text-classico-gold opacity-50" />
-                    </div>
-                  )}
+                  />
                 </div>
 
                 {/* Bottom Home Indicator */}
