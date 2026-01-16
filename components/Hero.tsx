@@ -132,7 +132,7 @@ export default function Hero() {
             >
               <motion.span variants={itemVariants} className="block">
                 Deine Sportsbar im Herzen von{' '}
-                <span className="text-classico-gold">Pfungstadt</span>.
+                <span className="text-classico-gold">Deine Stadt</span>.
               </motion.span>
             </h1>
             <motion.p
@@ -144,15 +144,13 @@ export default function Hero() {
             </motion.p>
             <motion.div variants={itemVariants} className="mt-16 sm:mt-20 lg:mt-0">
               <motion.a
-                href="https://wa.me/4961579898000?text=Hallo%20Classico-Team%2C%20ich%20w%C3%BCrde%20gerne%20einen%20Tisch%20f%C3%BCr%20das%20n%C3%A4chste%20Spiel%20reservieren%21"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="inline-flex items-center space-x-3 px-8 py-4 min-h-[44px] min-w-[44px] bg-classico-gold text-[#050505] font-bold text-lg rounded-lg shine-effect relative overflow-hidden focus-ring"
                 variants={buttonVariants}
                 animate="breathe"
                 whileHover="hover"
                 whileTap="tap"
-                aria-label="Tisch via WhatsApp reservieren"
+                aria-label="Tisch reservieren"
               >
                 <span>Tisch reservieren</span>
                 <MessageCircle size={20} fill="currentColor" aria-hidden="true" />

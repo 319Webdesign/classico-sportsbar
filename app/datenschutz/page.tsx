@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
   description:
-    'Datenschutzerklärung der Classico Sportsbar Pfungstadt. Informationen zur Datenverarbeitung und Ihren Rechten.',
+    'Datenschutzerklärung der Arena Sportsbar. Informationen zur Datenverarbeitung und Ihren Rechten.',
   robots: {
     index: false,
     follow: true,
@@ -117,15 +117,15 @@ export default function DatenschutzPage() {
                 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
               </p>
               <p>
-                <strong>Classico Sportsbar Pfungstadt</strong>
+                <strong>Arena Sportsbar</strong>
                 <br />
-                Mainstraße 11
+                Musterstraße 1
                 <br />
-                64319 Pfungstadt
+                12345 Stadt
                 <br />
-                Telefon: +49 6157 9898000
+                Telefon: +49 000 0000000
                 <br />
-                E-Mail: info@classico-sportsbar.de
+                E-Mail: info@example.com
                 <br />
                 <span className="text-sm text-gray-400">
                   (Bitte durch die tatsächliche E-Mail-Adresse ersetzen)

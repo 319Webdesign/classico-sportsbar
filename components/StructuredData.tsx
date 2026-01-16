@@ -2,25 +2,25 @@ export default function StructuredData() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
-    name: 'Classico Sportsbar Pfungstadt',
-    alternateName: 'Classico Sportsbar',
+    name: 'Arena Sportsbar',
+    alternateName: 'Arena Sportsbar',
     description:
-      'Sportsbar im Herzen von Pfungstadt. Erlebe internationale Sportevents live mit Sky und DAZN. Italienische Küche und Premium-Getränke.',
-    image: 'https://classico-sportsbar.de/logo.png',
+      'Modernes Sportsbar Template. Erlebe internationale Sportevents live. Perfekt für Gastronomie und Bars.',
+    image: 'https://example.com/logo.png',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Mainstraße 11',
-      addressLocality: 'Pfungstadt',
-      postalCode: '64319',
-      addressRegion: 'Hessen',
+      streetAddress: 'Musterstraße 1',
+      addressLocality: 'Deine Stadt',
+      postalCode: '12345',
+      addressRegion: 'Dein Bundesland',
       addressCountry: 'DE',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 49.8035913,
-      longitude: 8.5930187,
+      latitude: 50.0,
+      longitude: 8.0,
     },
-    telephone: '+4961579898000',
+    telephone: '+490000000000',
     priceRange: '€€',
     servesCuisine: ['Italienisch', 'Bar'],
     openingHoursSpecification: [
@@ -51,7 +51,7 @@ export default function StructuredData() {
     ],
     areaServed: {
       '@type': 'City',
-      name: 'Pfungstadt',
+      name: 'Deine Stadt',
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',

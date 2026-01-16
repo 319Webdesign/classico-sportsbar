@@ -11,8 +11,8 @@ type CookiePreferences = {
   marketing: boolean
 }
 
-const COOKIE_STORAGE_KEY = 'classico-cookie-consent'
-const COOKIE_PREFERENCES_KEY = 'classico-cookie-preferences'
+const COOKIE_STORAGE_KEY = 'sportsbar-cookie-consent'
+const COOKIE_PREFERENCES_KEY = 'sportsbar-cookie-preferences'
 
 export default function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false)
@@ -146,7 +146,7 @@ export default function CookieBanner() {
                       Cookies & Datenschutz
                     </h3>
                     <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                      Wir nutzen Cookies, um deinen Besuch im Classico noch besser zu machen. Manche
+                      Wir nutzen Cookies, um deinen Besuch noch besser zu machen. Manche
                       sind notwendig für die Funktion der Seite, andere helfen uns, die Seite zu
                       verbessern.
                     </p>

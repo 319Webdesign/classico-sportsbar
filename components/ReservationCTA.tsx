@@ -11,12 +11,8 @@ export default function ReservationCTA() {
     setIsMounted(true)
   }, [])
 
-  // WhatsApp-Link mit korrekter Telefonnummer
-  const phoneNumber = '4961579898000'
-  const message = encodeURIComponent(
-    'Hallo Classico-Team, ich würde gerne einen Tisch für das nächste Spiel reservieren!'
-  )
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
+  // WhatsApp-Link
+  const whatsappUrl = '#'
 
   // Goldene Partikel generieren - nur auf Client
   const particles = isMounted
@@ -175,7 +171,7 @@ export default function ReservationCTA() {
             
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Reserviere deinen Stammplatz für das nächste Live-Event in{' '}
-              <span className="text-classico-gold font-semibold">Pfungstadt</span>.
+              <span className="text-classico-gold font-semibold">Deine Stadt</span>.
             </p>
           </motion.div>
 
@@ -273,7 +269,7 @@ export default function ReservationCTA() {
                     Schon über <span className="text-classico-gold">30 Reservierungen</span> diesen Monat
                   </p>
                   <p className="text-gray-400 text-xs mt-0.5">
-                    Deine Stammbar in Pfungstadt
+                    Deine Stammbar in Deine Stadt
                   </p>
                 </div>
               </div>

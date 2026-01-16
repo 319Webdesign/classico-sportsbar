@@ -17,12 +17,8 @@ export default function WhatsAppButton() {
     return () => clearTimeout(timer)
   }, [])
 
-  // WhatsApp-Link mit korrekter Telefonnummer
-  const phoneNumber = '4961579898000'
-  const message = encodeURIComponent(
-    'Hallo Classico-Team, ich würde gerne einen Tisch für das nächste Spiel reservieren!'
-  )
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
+  // WhatsApp-Link
+  const whatsappUrl = '#'
 
   return (
     <AnimatePresence>

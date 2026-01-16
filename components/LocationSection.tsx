@@ -24,17 +24,17 @@ const OPENING_HOURS: OpeningHours[] = [
 
 // Adresse
 const ADDRESS = {
-  street: 'Mainstraße 11',
-  city: '64319 Pfungstadt',
-  full: 'Mainstraße 11, 64319 Pfungstadt',
+  street: 'Musterstraße 1',
+  city: '12345 Stadt',
+  full: 'Musterstraße 1, 12345 Stadt',
 }
 
 // Telefonnummer
-const PHONE_NUMBER = '+4961579898000'
-const PHONE_DISPLAY = '+49 6157 9898000'
+const PHONE_NUMBER = '+490000000000'
+const PHONE_DISPLAY = '+49 000 0000000'
 
-// Google Maps Embed URL - Classico Sportsbar
-const GOOGLE_MAPS_EMBED_URL = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.067889110881!2d8.593018676799213!3d49.80359133372735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd7bab71ec2407%3A0xda7f8878e9596042!2sClassico%20Sportsbar!5e0!3m2!1sde!2sde!4v1767963211114!5m2!1sde!2sde`
+// Google Maps Embed URL - Platzhalter
+const GOOGLE_MAPS_EMBED_URL = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.123456789!2d8.123456789!3d50.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDA3JzI0LjQiTiA4wrAwNycyNC40IkU!5e0!3m2!1sde!2sde!4v1234567890!5m2!1sde!2sde`
 
 export default function LocationSection() {
   const [currentDay, setCurrentDay] = useState<number>(0)
@@ -114,8 +114,8 @@ export default function LocationSection() {
             {/* Titel */}
             <div>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">
-                Besuch uns im{' '}
-                <span className="text-classico-gold">Classico</span>
+                Besuch uns in der{' '}
+                <span className="text-classico-gold">Arena</span>
               </h2>
             </div>
 
@@ -215,7 +215,7 @@ export default function LocationSection() {
                 <a
                   href={`tel:${PHONE_NUMBER}`}
                   className="text-gray-300 hover:text-classico-gold transition-colors text-lg inline-block min-h-[44px] min-w-[44px] inline-flex items-center px-2 focus-ring rounded-md"
-                  aria-label={`Classico Sportsbar anrufen: ${PHONE_DISPLAY}`}
+                  aria-label={`Arena Sportsbar anrufen: ${PHONE_DISPLAY}`}
                 >
                   {PHONE_DISPLAY}
                 </a>
@@ -235,7 +235,7 @@ export default function LocationSection() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="absolute inset-0 w-full h-full"
-                  title="Classico Sportsbar Standort"
+                  title="Arena Sportsbar Standort"
                 />
               </div>
               

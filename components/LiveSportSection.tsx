@@ -5,10 +5,10 @@ import { CalendarCheck, Instagram } from 'lucide-react'
 import Image from 'next/image'
 
 // Instagram URL
-const INSTAGRAM_URL = 'https://www.instagram.com/classico_sportsbar'
+const INSTAGRAM_URL = '#'
 
 // WhatsApp URL
-const WHATSAPP_URL = 'https://wa.me/4961579898000?text=Hallo%20Classico-Team%2C%20ich%20w%C3%BCrde%20gerne%20einen%20Tisch%20f%C3%BCr%20das%20n%C3%A4chste%20Event%20reservieren%21'
+const WHATSAPP_URL = '#'
 
 // Custom Sport Icons Components
 const FootballIcon = () => (
@@ -154,7 +154,7 @@ export default function LiveSportSection() {
             {/* Main Text */}
             <div className="space-y-4 text-lg lg:text-xl text-gray-300 leading-relaxed">
               <p>
-                Wir bringen das Stadion-Feeling direkt nach Pfungstadt. Als offizieller Partner
+                Wir bringen das Stadion-Feeling direkt nach Deine Stadt. Als offizieller Partner
                 von Sky und DAZN haben wir Zugriff auf alle Live-Events. Egal ob Bundesliga,
                 Champions League oder internationale Top-Ligen – bei uns verpasst du keine Sekunde.
               </p>

@@ -27,20 +27,28 @@ export default function Navigation() {
           <Link
             href="/"
             className="flex items-center space-x-3 focus-ring rounded-md p-2 -m-2"
-            aria-label="Classico Sportsbar - Zur Startseite"
+            aria-label="Arena Sportsbar - Zur Startseite"
           >
-            <Image
-              src="/logo.png"
-              alt=""
-              width={60}
-              height={60}
-              className="h-12 w-12 lg:h-14 lg:w-14 object-contain brightness-0 invert"
-              priority
-              sizes="(max-width: 1024px) 48px, 56px"
-            />
+            <div className="h-12 w-12 lg:h-14 lg:w-14 flex items-center justify-center">
+              <svg
+                width="56"
+                height="56"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-classico-gold"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
             <div className="flex flex-col">
               <span className="text-2xl lg:text-3xl font-bold text-classico-gold leading-tight">
-                CLASSICO
+                ARENA
               </span>
               <span className="text-sm lg:text-base text-gray-300 leading-tight">
                 SPORTSBAR
@@ -50,11 +58,9 @@ export default function Navigation() {
 
           {/* Reservieren Button - nur auf Desktop sichtbar */}
           <a
-            href="https://wa.me/4961579898000?text=Hallo%20Classico-Team%2C%20ich%20w%C3%BCrde%20gerne%20einen%20Tisch%20f%C3%BCr%20das%20n%C3%A4chste%20Spiel%20reservieren%21"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
             className="hidden lg:inline-flex px-8 py-3 lg:px-10 lg:py-4 min-h-[44px] min-w-[44px] bg-classico-gold text-[#050505] font-semibold text-base lg:text-lg rounded-md hover:bg-[#E6C547] transition-colors duration-200 focus-ring items-center justify-center"
-            aria-label="Tisch via WhatsApp reservieren"
+            aria-label="Tisch reservieren"
           >
             Tisch reservieren
           </a>

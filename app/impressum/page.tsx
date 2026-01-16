@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Impressum',
   description:
-    'Impressum der Classico Sportsbar Pfungstadt. Kontaktdaten, Adresse und rechtliche Informationen.',
+    'Impressum der Arena Sportsbar. Kontaktdaten, Adresse und rechtliche Informationen.',
   robots: {
     index: false,
     follow: true,
@@ -38,11 +38,11 @@ export default function ImpressumPage() {
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                <strong>Classico Sportsbar Pfungstadt</strong>
+                <strong>Arena Sportsbar</strong>
                 <br />
-                Mainstraße 11
+                Musterstraße 1
                 <br />
-                64319 Pfungstadt
+                12345 Stadt
               </p>
               <p>
                 Deutschland
@@ -59,19 +59,19 @@ export default function ImpressumPage() {
               <p>
                 <strong>Telefon:</strong>{' '}
                 <a
-                  href="tel:+4961579898000"
+                  href="tel:+490000000000"
                   className="text-classico-gold hover:underline"
                 >
-                  +49 6157 9898000
+                  +49 000 0000000
                 </a>
               </p>
               <p>
                 <strong>E-Mail:</strong>{' '}
                 <a
-                  href="mailto:info@classico-sportsbar.de"
+                  href="mailto:info@example.com"
                   className="text-classico-gold hover:underline"
                 >
-                  info@classico-sportsbar.de
+                  info@example.com
                 </a>
                 <br />
                 <span className="text-sm text-gray-400">
@@ -109,9 +109,9 @@ export default function ImpressumPage() {
               <p>
                 [Name des Verantwortlichen]
                 <br />
-                Mainstraße 11
+                Musterstraße 1
                 <br />
-                64319 Pfungstadt
+                12345 Stadt
                 <br />
                 <span className="text-sm text-gray-400">
                   (Bitte durch den tatsächlichen Namen des Verantwortlichen ersetzen)
@@ -129,9 +129,9 @@ export default function ImpressumPage() {
               <p>
                 [Name des Redaktionsverantwortlichen]
                 <br />
-                Mainstraße 11
+                Musterstraße 1
                 <br />
-                64319 Pfungstadt
+                12345 Stadt
                 <br />
                 <span className="text-sm text-gray-400">
                   (Optional - falls abweichend vom Inhaber)

@@ -11,25 +11,24 @@ interface Review {
 
 const REVIEWS: Review[] = [
   {
-    name: 'Vincenzo Solombrino',
-    text: 'Endlich mal eine gute Sportsbar, wo man auch mit Frau einen schönen Abend verbringen kann. Bedienungen super freundlich. Tipp: Frühzeitig kommen bei Top-Spielen!',
+    name: 'Max Mustermann',
+    text: 'Tolle Atmosphäre, super Service! Die Sportsbar ist perfekt für Live-Events. Sehr zu empfehlen!',
     rating: 5,
   },
   {
-    name: 'Giu Ambo',
+    name: 'Anna Schmidt',
     text: 'Mehr als ausreichend Fernseher für verschiedene Spiele gleichzeitig. Tolle Atmosphäre bei Top-Spielen!',
     rating: 5,
   },
   {
-    name: 'Haval Ibrahim',
-    text: 'Sehr freundliches Personal, schöne Einrichtung, super Getränke. Sehr zu empfehlen!',
+    name: 'Thomas Müller',
+    text: 'Sehr freundliches Personal, schöne Einrichtung, super Getränke. Gerne wieder!',
     rating: 5,
   },
 ]
 
-// Google Business Profile URL (TODO: Durch echte URL ersetzen)
-const GOOGLE_BUSINESS_URL =
-  'https://www.google.com/maps/place/Classico+Sportsbar/@49.8035913,8.5930187,15z/data=!4m6!3m5!1s0x47bd7bab71ec2407:0xda7f8878e9596042!8m2!3d49.8035913!4d8.5930187!16s%2Fg%2F11t0qkxm0l'
+// Google Business Profile URL
+const GOOGLE_BUSINESS_URL = '#'
 
 const containerVariants = {
   hidden: { opacity: 0 },

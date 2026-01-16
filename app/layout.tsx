@@ -8,25 +8,22 @@ import StructuredData from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Classico Sportsbar Pfungstadt | Live Fußball & Sportevents',
-    template: '%s | Classico Sportsbar Pfungstadt',
+    default: 'Modern Sportsbar Template | Dein Name Webdesign',
+    template: '%s | Modern Sportsbar Template',
   },
   description:
-    'Deine Sportsbar im Herzen von Pfungstadt. Erlebe internationale Sportevents live in authentischer Atmosphäre. Offizieller Partner von Sky & DAZN. Bundesliga, Champions League, Live Fußball.',
+    'Modernes Sportsbar Template für Gastronomie. Erlebe internationale Sportevents live in authentischer Atmosphäre. Perfekt für Bars, Restaurants und Sportlokale.',
   keywords: [
-    'Sportsbar Pfungstadt',
-    'Live Fußball Darmstadt',
-    'Bundesliga schauen Bergstraße',
-    'Sportsbar Bergstraße',
-    'Live Sport Pfungstadt',
-    'Sky Sport Gastronomie',
-    'DAZN Partner Pfungstadt',
-    'Fußball schauen Pfungstadt',
-    'Sportsbar Hessen',
+    'Sportsbar Template',
+    'Gastronomie Website',
+    'Bar Website',
+    'Restaurant Template',
+    'Live Sport Bar',
+    'Sportsbar Design',
   ],
-  authors: [{ name: 'Classico Sportsbar Pfungstadt' }],
-  creator: 'Classico Sportsbar Pfungstadt',
-  publisher: 'Classico Sportsbar Pfungstadt',
+  authors: [{ name: 'Dein Name Webdesign' }],
+  creator: 'Dein Name Webdesign',
+  publisher: 'Dein Name Webdesign',
   formatDetection: {
     email: false,
     address: false,
@@ -44,25 +41,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    url: 'https://classico-sportsbar.de',
-    title: 'Classico Sportsbar Pfungstadt | Live Sport Events',
+    url: 'https://example.com',
+    title: 'Modern Sportsbar Template | Dein Name Webdesign',
     description:
-      'Deine Sportsbar im Herzen von Pfungstadt. Erlebe internationale Sportevents live. Offizieller Partner von Sky & DAZN.',
-    siteName: 'Classico Sportsbar Pfungstadt',
+      'Modernes Sportsbar Template für Gastronomie. Perfekt für Bars, Restaurants und Sportlokale.',
+    siteName: 'Modern Sportsbar Template',
     images: [
       {
         url: '/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Classico Sportsbar Pfungstadt',
+        alt: 'Modern Sportsbar Template',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Classico Sportsbar Pfungstadt | Live Sport Events',
+    title: 'Modern Sportsbar Template | Dein Name Webdesign',
     description:
-      'Deine Sportsbar im Herzen von Pfungstadt. Erlebe internationale Sportevents live.',
+      'Modernes Sportsbar Template für Gastronomie. Perfekt für Bars und Restaurants.',
     images: ['/logo.png'],
   },
   robots: {
