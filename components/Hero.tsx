@@ -80,41 +80,18 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden w-full max-w-full">
-      {/* Mobile: Fullscreen Background Video */}
+      {/* Mobile: Platzhalter Hintergrund */}
       <div className="lg:hidden absolute inset-0 w-full h-full z-0 max-w-full">
-        <video
-          ref={mobileVideoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover"
-          onLoadedData={() => {
-            setVideoLoaded(true)
-            mobileVideoRef.current?.play().catch(console.error)
+        {/* Platzhalter-Bild von Unsplash */}
+        <div
+          className="w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage:
+              'url(https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?q=80&w=1920&auto=format&fit=crop)',
           }}
-          onCanPlay={() => {
-            setVideoLoaded(true)
-            mobileVideoRef.current?.play().catch(console.error)
-          }}
-          onError={(e) => {
-            console.error('Mobile video error:', e)
-            setVideoError(true)
-          }}
-          onPlay={() => setVideoLoaded(true)}
-        >
-          <source src="/header_video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
         {/* Overlay für bessere Lesbarkeit */}
         <div className="absolute inset-0 bg-black/60 z-10" />
-        {/* Fallback if video doesn't load */}
-        {videoError && (
-          <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center z-20 pointer-events-none">
-            <Play size={64} className="text-classico-gold opacity-50" />
-          </div>
-        )}
       </div>
 
       {/* Desktop: Split-Screen Layout (60/40) */}
